@@ -1,0 +1,31 @@
+[package]
+description = "Tethereum client"
+name = "tethereum"
+# NOTE Make sure to update util/version/Cargo.toml as well
+version = "1.0.0"
+license = "GPL-3.0"
+authors = ["m6567fc@outlook.com"]
+
+[dependencies]
+ethereum-types = { version = "0.11.0" }
+jsonrpc-core = "14.0.5"
+jsonrpc-derive = "14.0.5"
+jsonrpc-http-server = "14.0.5"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+hex = "0.4"
+parity-bytes = "0.1"
+keccak-hash = "0.7.0"
+rlp = "0.5.0"
+evm = { path = "../rust-blockchain/evm" }
+parity-crypto = { version = "0.8.0", features = ["publickey"] }
+trie-db = "0.22.3"
+
+[build-dependencies]
+
+[dev-dependencies]
+
+
+
+
